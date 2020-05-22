@@ -17,5 +17,14 @@ namespace App1
         {
             InitializeComponent();
         }
+
+        void Button_Clicked(System.Object sender, System.EventArgs e)
+        {
+              Navigation.PushModalAsync(new MyPage1());
+            // Navigation.PushAsync(new MyPag2("NewPage2Title"));
+            //var myPage2 = new MyPag2();
+            //myPage2.BindingContext = "NewPage2Title";
+            //Navigation.PushAsync(myPage2);
+        }
     }
 }
